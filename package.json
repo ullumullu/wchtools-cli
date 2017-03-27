@@ -20,7 +20,7 @@
   "scripts": {
     "npminstallall": "node ./npminstallall.js",
     "clear": "node ./npmclearmodules.js",
-    "install": "npm run clear && npm run npminstallall",
+    "install": "npm install && npm run clear && npm run npminstallall",
     "unit": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha authoring-api/test/unit/*.test.js CLI/test/unit/*.test.js -- --recursive"
   },
   "private": true
